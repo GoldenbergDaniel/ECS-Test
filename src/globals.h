@@ -4,6 +4,7 @@
 
 #define WINDOW_WIDTH 800
 #define WINDOW_HEIGHT 450
+#define WINDOW_TITLE "ECS Test"
 
 typedef unsigned char u8;
 typedef short unsigned int u16;
