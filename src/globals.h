@@ -23,3 +23,6 @@ typedef int i32;
 typedef long int i64;
 typedef float f32;
 typedef long f64;
+typedef Vector2 v2;
+typedef Matrix m4;
+typedef Rectangle r4;
