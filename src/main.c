@@ -1,10 +1,30 @@
-#include <stdio.h>
-
 #include "globals.h"
 
-i32 main()
+#include "game.h"
+
+i32 main(void)
 {
-    printf("Hello, world! \n");
+    SetConfigFlags(FLAG_VSYNC_HINT | FLAG_WINDOW_HIGHDPI);
+    SetTargetFPS(60);
+
+    InitWindow(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE);
+
+    State state = (State) {true};
+
+    game_init(&state);
+
+    while (!WindowShouldClose())
+    {
+        game_update(&state);
+
+        BeginDrawing();
+
+        game_draw(&state);
+
+        EndDrawing();
+    }
+
+    CloseWindow();
 
     return 0;
 }
