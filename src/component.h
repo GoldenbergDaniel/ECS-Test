@@ -1,5 +1,5 @@
 
-// ID: 001
+// ID: 00000000
 typedef struct C_Translation
 {
     f32 speed;
@@ -7,14 +7,14 @@ typedef struct C_Translation
     v2 velocity;
 } C_Translation;
 
-// ID: 010
+// ID: 00000001
 typedef struct C_Acceleration
 {
     f32 mass;
     v2 acceleration;
 } C_Acceleration;
 
-// ID: 100
+// ID: 0000010
 typedef struct C_Display
 {
     f32 scale;
