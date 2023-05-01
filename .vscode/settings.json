@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "entity.h": "c",
-        "globals.h": "c",
-        "ecs.h": "c"
-    }
-}
